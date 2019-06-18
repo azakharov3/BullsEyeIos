@@ -22,7 +22,8 @@ class ViewController: UIViewController {
     
     @IBAction func showAlert(){
         let message = "The current value of the slider is now: \(currentValue)" +
-        "\nThe target value is: \(targetValue)"
+        "\nThe target value is: \(targetValue)" +
+        "\nThe difference is: \(calculateDiff(valueA: currentValue, valueB: targetValue))"
         let alert = UIAlertController(title: "Hello, World!", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
         alert.addAction(action)
@@ -39,8 +40,15 @@ class ViewController: UIViewController {
         targetValue = Int.random(in: 1...100)
         currentValue = 50
         slider.value = Float(currentValue)
+        updateLabels()
+    }
+    
+    private func updateLabels() {
         targetLabel.text = String(targetValue)
-        
+    }
+    
+    private func calculateDiff(valueA: Int, valueB: Int) -> Int {
+        return abs(valueA - valueB)
     }
 }
 
