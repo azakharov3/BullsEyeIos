@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7742AD5522C1887200849148 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 7742AD5422C1887200849148 /* BullsEye.html */; };
 		774808FD22A8801B002372D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774808FC22A8801B002372D3 /* AppDelegate.swift */; };
 		774808FF22A8801B002372D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774808FE22A8801B002372D3 /* ViewController.swift */; };
 		7748090222A8801B002372D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7748090022A8801B002372D3 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7742AD5422C1887200849148 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 		774808F922A8801B002372D3 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774808FC22A8801B002372D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774808FE22A8801B002372D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				7748090322A8801E002372D3 /* Assets.xcassets */,
 				7748090522A8801E002372D3 /* LaunchScreen.storyboard */,
 				7748090822A8801E002372D3 /* Info.plist */,
+				7742AD5422C1887200849148 /* BullsEye.html */,
 			);
 			path = BullsEye;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7748090722A8801E002372D3 /* LaunchScreen.storyboard in Resources */,
+				7742AD5522C1887200849148 /* BullsEye.html in Resources */,
 				7748090422A8801E002372D3 /* Assets.xcassets in Resources */,
 				7748090222A8801B002372D3 /* Main.storyboard in Resources */,
 			);
