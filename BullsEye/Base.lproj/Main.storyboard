@@ -24,7 +24,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JvC-Ix-t0M">
                                 <rect key="frame" x="75.5" y="58" width="516" height="259"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rY-VB-kKq">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rY-VB-kKq">
                                         <rect key="frame" x="208" y="127" width="100" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
@@ -176,9 +176,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Wjy-lU-EgS">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Je0-8m-rVF">
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBR-tv-hvz">
+                                <rect key="frame" x="498" y="318" width="149" height="37"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="About The Author" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.37647058820000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="Button-Highlighted">
+                                    <color key="titleColor" red="0.37647058820000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Je0-8m-rVF">
                                 <rect key="frame" x="283.5" y="318" width="100" height="37"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Close" backgroundImage="Button-Normal">
                                     <color key="titleColor" red="0.37647058820000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -191,19 +205,24 @@
                                     <action selector="close" destination="Yje-mV-01n" eventType="touchUpInside" id="DmQ-Xv-fW3"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRr-Et-o8Q">
-                                <rect key="frame" x="20" y="27" width="528" height="211"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRr-Et-o8Q">
+                                <rect key="frame" x="20" y="20" width="627" height="278"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="cuH-W0-EK8" firstAttribute="bottom" secondItem="DBR-tv-hvz" secondAttribute="bottom" constant="20" id="0xU-87-1Es"/>
+                            <constraint firstItem="DBR-tv-hvz" firstAttribute="top" secondItem="aRr-Et-o8Q" secondAttribute="bottom" constant="20" id="4AS-7w-6L0"/>
                             <constraint firstItem="Wjy-lU-EgS" firstAttribute="leading" secondItem="cuH-W0-EK8" secondAttribute="leading" id="7hM-9h-956"/>
+                            <constraint firstItem="cuH-W0-EK8" firstAttribute="trailing" secondItem="aRr-Et-o8Q" secondAttribute="trailing" constant="20" id="9kJ-Yt-vIO"/>
+                            <constraint firstItem="cuH-W0-EK8" firstAttribute="trailing" secondItem="DBR-tv-hvz" secondAttribute="trailing" constant="20" id="RvG-oo-3kM"/>
                             <constraint firstItem="cuH-W0-EK8" firstAttribute="trailing" secondItem="Wjy-lU-EgS" secondAttribute="trailing" id="Swt-QS-jC6"/>
+                            <constraint firstItem="aRr-Et-o8Q" firstAttribute="leading" secondItem="cuH-W0-EK8" secondAttribute="leading" constant="20" id="Wc5-FU-o9P"/>
                             <constraint firstItem="Wjy-lU-EgS" firstAttribute="top" secondItem="cuH-W0-EK8" secondAttribute="top" id="hlM-0h-x1h"/>
                             <constraint firstItem="Je0-8m-rVF" firstAttribute="centerX" secondItem="h60-ow-Ehd" secondAttribute="centerX" id="r0X-Aq-b8S"/>
                             <constraint firstItem="cuH-W0-EK8" firstAttribute="bottom" secondItem="Wjy-lU-EgS" secondAttribute="bottom" id="s8Y-6W-ZAI"/>
+                            <constraint firstItem="aRr-Et-o8Q" firstAttribute="top" secondItem="cuH-W0-EK8" secondAttribute="top" constant="20" id="uAc-Eh-kvL"/>
                             <constraint firstItem="cuH-W0-EK8" firstAttribute="bottom" secondItem="Je0-8m-rVF" secondAttribute="bottom" constant="20" id="wVN-h3-1jW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cuH-W0-EK8"/>
